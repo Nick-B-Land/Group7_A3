@@ -1,0 +1,77 @@
+package sait.sll.utility;
+
+public class SLL implements LinkedListADT{
+    Node head;
+    Node tail;
+    int size;
+
+    public SLL(){
+        size = 0;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        if(size > 0)
+            return false;
+        else
+            return true;
+    }
+
+    @Override
+    public void clear() {
+
+    }
+
+    @Override
+    public void append(Object data) {
+        Node<Object> newNode = new Node<>(data);
+        tail.next = newNode;
+        tail = tail.next;
+
+        if(head == null){
+            head = tail = newNode;
+        }
+
+        size++;
+    }
+
+    @Override
+    public void prepend(Object data) {
+
+    }
+
+    @Override
+    public void insert(Object data, int index) throws IndexOutOfBoundsException {
+
+    }
+
+    @Override
+    public void replace(Object data, int index) throws IndexOutOfBoundsException {
+
+    }
+
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public void delete(int index) throws IndexOutOfBoundsException {
+
+    }
+
+    @Override
+    public Object retrieve(int index) throws IndexOutOfBoundsException {
+        return null;
+    }
+
+    @Override
+    public int indexOf(Object data) {
+        return 0;
+    }
+
+    @Override
+    public boolean contains(Object data) {
+        return false;
+    }
+}
