@@ -73,6 +73,21 @@ class LinkedListTests {
 	}
 	
 	/**
+	 * Test if data is clear
+	 */
+	@Test
+	void testClear() {
+		this.linkedList.append("a");
+		this.linkedList.append("b");
+		this.linkedList.append("c");
+		this.linkedList.append("d");
+		
+		this.linkedList.clear();
+		
+		assertTrue(this.linkedList.size() == 0);
+	}
+	
+	/**
 	 * Tests appending elements to the linked list.
 	 */
 	@Test
