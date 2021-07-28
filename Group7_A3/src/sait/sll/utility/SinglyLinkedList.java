@@ -1,6 +1,8 @@
 package sait.sll.utility;
 
-public class SinglyLinkedList implements LinkedListADT{
+import java.io.Serializable;
+
+public class SinglyLinkedList implements LinkedListADT, Serializable {
     Node head;
     Node tail;
     int size;
@@ -147,7 +149,6 @@ public class SinglyLinkedList implements LinkedListADT{
             temp1 = temp1.next;
             counter++;
         }
-
 
         if(temp1 == head){
             head = temp1.next;

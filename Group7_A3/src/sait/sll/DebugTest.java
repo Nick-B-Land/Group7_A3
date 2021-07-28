@@ -57,7 +57,7 @@ public class DebugTest {
         list.append("d");
         list.insert("e", 3);
         list.insert("z", 0);
-        String b = (String) list.retrieve(0);
+        String b = (String) list.retrieve(1000);
         System.out.println(b);
     }
 }
