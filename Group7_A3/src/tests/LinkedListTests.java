@@ -45,6 +45,34 @@ class LinkedListTests {
 	}
 	
 	/**
+	 * Test if linked list contains data
+	 */
+	@Test
+	void testContains() {
+		this.linkedList.append("a");
+		this.linkedList.append("b");
+		this.linkedList.append("c");
+		this.linkedList.append("d");
+		
+		assertTrue(this.linkedList.contains("c"));
+		assertFalse(this.linkedList.contains("f"));
+	}
+	
+	/**
+	 * Test the index of the data
+	 */
+	@Test
+	void testIndexOf() {
+		this.linkedList.append("a");
+		this.linkedList.append("b");
+		this.linkedList.append("c");
+		this.linkedList.append("d");
+		
+		assertEquals(0, this.linkedList.indexOf("a"));
+		assertEquals(-1, this.linkedList.indexOf("z"));
+	}
+	
+	/**
 	 * Tests appending elements to the linked list.
 	 */
 	@Test
