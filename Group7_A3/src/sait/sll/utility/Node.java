@@ -1,6 +1,8 @@
 package sait.sll.utility;
 
-public class Node<E> {
+import java.io.Serializable;
+
+public class Node<E> implements Serializable {
     E data;
     Node next;
 
