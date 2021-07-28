@@ -28,6 +28,7 @@ public class SinglyLinkedList implements LinkedListADT, Serializable {
     @Override
     public void clear() {
         head = null;
+        tail = null;
         size = 0;
     }
 
